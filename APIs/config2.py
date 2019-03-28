@@ -1,0 +1,5 @@
+api_key = "1ddaf8dba067f0ef8bcf4a37a46d962c"
+gkey = "AIzaSyCl3UG768CO-z68hFwOrlUDqgP3ZhwXh98"
+census_key = "85ac64b6b5a9c0901b00329d1ef41f0c53ccfc98"
+weather_key = "ff22e4c31333a20075b1ff050bdf8ddb"
+key = "2316b03031cfb536c1958354842e8bc0c"
