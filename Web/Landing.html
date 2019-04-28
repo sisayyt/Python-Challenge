@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" href="styles.css">
+     
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing</title>o
+
+    
+<body>
+    <div class = "container-fulid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="Landing.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="Comaprison.html">Comparision <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                      </li>
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Landing.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cloud.html">cloud</a>
+                <a class="dropdown-item" href="Hum.html">Hum</a>
+                <a class="dropdown-item" href="temp.html">Temp</a>
+                <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+      <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="box">
+                            <div class="page-header">
+                                <h1 class="title">Summary</h1>
+                            </div>
+                            <div class="box">
+                            	<img src="./Hum.png" alt="Latitude vs. Temperature" height="280" width="280" align="left">
+                            	<p class="category"> 
+                                  
+                                  <section id="summary">
+	                            </p>
+	                            
+                                  <p> This project aims to answer "what is the weather like when getting close to the equator?”
+                                      Python CiitiPy library, Python, API’s, and JSON tools are used to answer this question.
+                                       
+                                   </p>
+       
+                                   <p>A random of 1500 Latitude and Longitudes was used to find the closest Lat/Long the quator to get a listing of over 600 cities.
+                                       Using Open Weather API, weather data was collected from OpenWeatherMap. A dataframe was created using the data gathered from 1500 cities.
+                                   </p>
+       
+                                   <p>
+                                       The dataframe is analyzed across the three climate zones. The relationship between 
+                                       latitude and temperature, lattitude and humidity, lattitude and cloudiness, and lattitude and wind speed were plotted using MatplotLib scatter plots to view.
+                                   </p>
+                                   <br>
+                                   <br>
+                                   <ul>
+                                       <li>Temperature (F) vs. Latitude</li>
+                                       <li>Humidity (%) vs. Latitude</li>
+                                       <li>Cloudiness (%) vs. Latitude</li>
+                                       <li>Wind Speed (mph) vs. Latitude</li>
+       
+                                   </ul>
+	                			    </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="box">
+                            <div class="page-header">
+                                <h1 class="title">Visualizations</h1>
+                            </div>
+                            <div class="box">
+                               <a href="./Hum.html"><img src="./temp.png" alt="Latitude vs. Temperature" height="160" width="160"></a>
+	                           <a href="./cloud.html"><img src="./Hum.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
+	                           <a href="./tem.html"><img src="./windspeed.png" alt="Latitude vs. Windspeed" height="160" width="160"></a>
+	                           <a href="./cloudness.html"><img src="./cloud.png" alt="Latitude vs. Cloud" height="160" width="160"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
