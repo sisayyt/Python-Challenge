@@ -1,0 +1,56 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.0'
+      jupytext_version: 1.0.5
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+```{python}
+import pandas as pd
+import os
+
+```
+
+```{python}
+currentDirectory = os.getcwd()
+currentDirectory
+```
+
+```{python}
+df1 =pd.read_csv("City Data/2014-01 - Citi Bike trip data.csv")
+df2 =pd.read_csv("City Data/2014-02 - Citi Bike trip data.csv")
+df3 =pd.read_csv("City Data/2014-03 - Citi Bike trip data.csv")
+df4 =pd.read_csv("City Data/2014-04 - Citi Bike trip data.csv")
+df5 =pd.read_csv("City Data/2014-05 - Citi Bike trip data.csv")
+df6 =pd.read_csv("City Data/2014-06 - Citi Bike trip data.csv")
+ 
+
+```
+
+```{python}
+df_merge = pd.concat([df1, df2, df3, df4, df5, df6], ignore_index=True)
+df_merge.head()
+```
+
+```{python}
+df_merge.shape
+```
+
+```{python}
+df_merge.to_csv('City Data/merge.csv')
+```
+
+```{python}
+
+```
+
+```{python}
+
+```
